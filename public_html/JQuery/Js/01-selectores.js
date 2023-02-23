@@ -1,4 +1,5 @@
 'use strict';
+//IMPORTANTEEEE, LAS FLECHAS PARA LOS CALLBACKS NO FUNCIONAN EN JQUERY
 $(document).ready(()=>{
     //Selector de id
     var rojo = $("#rojo").css("background","red")
