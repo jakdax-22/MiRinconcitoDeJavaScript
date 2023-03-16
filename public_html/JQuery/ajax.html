@@ -1,0 +1,31 @@
+<html lang="es">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"  crossorigin="anonymous">           
+        </script>
+        <script type="text/javascript" src="./Js/05-ajax.js"></script>
+        <style>
+            #datos{
+                border: 2px solid green;
+                width: 250px;
+                height:250px;
+                overflow:scroll;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <title>Aprendiendo JQuery - Efectos</title>
+    </head>
+    
+    <body>
+        <h1>Aprendiendo AJAX</h1>
+        <form action="https://reqres.in/api/users" method="POST" id="formulario">
+            <input type="text" name="name"/>
+            <input type="text" name="web"/>
+            <input type="submit" value="registrar"/>
+        </form>
+        <br>
+        <div id="datos">
+            
+            
+        </div>
+    </body>
+</html>
