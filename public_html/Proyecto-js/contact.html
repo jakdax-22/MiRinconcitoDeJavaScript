@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -8,12 +9,14 @@
         
         <!--JQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../JQuery/jquery-ui-1.13.2/jquery-ui.min.js" >           
+        </script>
+        <link rel="stylesheet" href="../JQuery/jquery-ui-1.13.2/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../JQuery/jquery-ui-1.13.2/jquery-ui.structure.min.css" />
+        <link rel="stylesheet" href="../JQuery/jquery-ui-1.13.2/jquery-ui.theme.min.css" />       
+        <!-- Plugin validación -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
         
-        <!-- Slider -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>        
-        <!-- Moment JS -->
-        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
         <!-- Mis Scripts -->
         <script type="text/javascript" src="js/main.js"></script>
         <meta charset="UTF-8">
@@ -36,23 +39,44 @@
                 </div>
                 <nav id="menu">
                     <ul>
-                        <li><a href="#">Inicio</a> </li>
+                        <li><a href="index.html">Inicio</a> </li>
                         <li><a href="reloj.html">Reloj</a> </li>
                         <li><a href="about.html">Sobre mi</a> </li>
                         <li><a href="contact.html">Contacto</a> </li>                        
                     </ul>
                 </nav>
             </header>
-            <!-- Slider -->
-            <div class="bxslider">
-              <div><img src="img/hojas.jfif" title="Hojas" /></div>
-              <div><img src="img/rojo.jfif" title="Rojo" /></div>
-              <div><img src="img/cielo.jfif" title="Cielo" /></div>              
-            </div>
             <!-- Contenido -->
             <section id="content">
-                <div id="posts"> 
-                    <!-- Cargar post desde json -->
+                <div id="box"> 
+                    <!-- Cargar Contacto -->
+                    <h2>Contacto</h2>
+                    <form method="POST" action="" id="form_contact">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" data-validation="alphanumeric"/>
+                        
+                         <label for="surname">Apellidos</label>
+                        <input type="text" name="surname" data-validation="alphanumeric"/>
+                         
+                        <label>Email</label>
+                        <input type="email" name="email" data-validation="email"/>
+
+                        <label for="sex">Sexo</label>
+                        <select name="sex" data-validation="required">
+                            <option value="man">Hombre</option>
+                            <option value="woman">Mujer</option>
+                        </select>
+                        
+                        <label for="date">Fecha de Nacimiento</label>
+                        <input type="text" id="date" data-validation="date" data-validation-format="dd-mm-yy"/>
+
+                        <label for="year">Edad</label>
+                        <input type="number" name="years" data-validation="number"/>
+                        
+                        <input type="submit" value="Enviar"/>
+                        
+                    </form>
+                    
                 </div>
                 <aside id="sidebar">
                     <div id="about" >
@@ -68,7 +92,7 @@
                     </div>
                     <div id="login">
                         <h4>Identificate</h4>
-                                                <form  method="POST" action="" id="form_contact">
+                        <form  method="POST" action="" id="form_contact">
                             <label for="name"> 
                                 Nombre
                             </label>
@@ -100,3 +124,4 @@
         </footer>
     </body>
 </html>
+

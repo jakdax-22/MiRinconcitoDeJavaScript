@@ -8,12 +8,11 @@
         
         <!--JQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        
-        <!-- Slider -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>        
-        <!-- Moment JS -->
-        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+        <script src="../JQuery/jquery-ui-1.13.2/jquery-ui.min.js" >           
+        </script>
+        <link rel="stylesheet" href="../JQuery/jquery-ui-1.13.2/jquery-ui.min.css" />
+        <link rel="stylesheet" href="../JQuery/jquery-ui-1.13.2/jquery-ui.structure.min.css" />
+        <link rel="stylesheet" href="../JQuery/jquery-ui-1.13.2/jquery-ui.theme.min.css" />       
         <!-- Mis Scripts -->
         <script type="text/javascript" src="js/main.js"></script>
         <meta charset="UTF-8">
@@ -36,23 +35,50 @@
                 </div>
                 <nav id="menu">
                     <ul>
-                        <li><a href="#">Inicio</a> </li>
+                        <li><a href="index.html">Inicio</a> </li>
                         <li><a href="reloj.html">Reloj</a> </li>
                         <li><a href="about.html">Sobre mi</a> </li>
                         <li><a href="contact.html">Contacto</a> </li>                        
                     </ul>
                 </nav>
             </header>
-            <!-- Slider -->
-            <div class="bxslider">
-              <div><img src="img/hojas.jfif" title="Hojas" /></div>
-              <div><img src="img/rojo.jfif" title="Rojo" /></div>
-              <div><img src="img/cielo.jfif" title="Cielo" /></div>              
-            </div>
             <!-- Contenido -->
             <section id="content">
-                <div id="posts"> 
-                    <!-- Cargar post desde json -->
+                <div id="box"> 
+                    <!-- Cargar acordeon -->
+                    <h2>Sobre mí</h2>
+                    <div id="acordeon">
+                        <h3>Quienes somos</h3>
+                        <div>
+                            <p>
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                                cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó
+                                una galería de textos y los mezcló de tal manera que logró hacer un libro de textos
+                                especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                                relleno en documentos electrónicos, quedando esencialmente igual al original.                                      
+                            </p>
+                        </div>
+                        <h3>Nuestros servicios</h3>
+                        <div>
+                            <p>
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                                cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó
+                                una galería de textos y los mezcló de tal manera que logró hacer un libro de textos
+                                especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                                relleno en documentos electrónicos, quedando esencialmente igual al original.                                      
+                            </p>
+                        </div>     
+                        <h3>Nuestros clientes</h3>
+                        <div>
+                            <p>
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                                cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó
+                                una galería de textos y los mezcló de tal manera que logró hacer un libro de textos
+                                especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                                relleno en documentos electrónicos, quedando esencialmente igual al original.                                      
+                            </p>
+                        </div>                        
+                    </div>
                 </div>
                 <aside id="sidebar">
                     <div id="about" >
@@ -100,3 +126,4 @@
         </footer>
     </body>
 </html>
+
